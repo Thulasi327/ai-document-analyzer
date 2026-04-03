@@ -1,6 +1,6 @@
-from docx import Document
+import docx
 
-def extract_text_docx(file_path):
-    doc = Document(file_path)
+def extract_text_from_docx(file_path):
+    doc = docx.Document(file_path)
     text = "\n".join([para.text for para in doc.paragraphs])
     return text
