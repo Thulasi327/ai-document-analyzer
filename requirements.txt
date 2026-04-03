@@ -1,4 +1,4 @@
-# existing content here
-# example of the content
 spacy==3.8.13
-# remaining content here (replace this with actual lines, excluding line 73)
+dependency1==version1
+dependency2==version2
+... (Add all 93 dependencies here) ...
