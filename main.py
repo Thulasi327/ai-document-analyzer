@@ -188,12 +188,4 @@ async def analyze(request: DocumentRequest, x_api_key: str = Header(None)):
 
     except Exception as e:
         return {"error": str(e)}
-from pyngrok import ngrok
-import uvicorn
 
-if __name__ == "__main__":
-    public_url = ngrok.connect(8000)
-    print("🌐 Public URL:", public_url)
-
-    uvicorn.run("main:app", host="0.0.0.0", port=8000)       
-        
